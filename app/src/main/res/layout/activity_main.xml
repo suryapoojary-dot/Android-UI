@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/restaurant_name"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Hungry Developer"
+        android:textSize="24sp"
+        android:textColor="@color/material_dynamic_primary30"
+        android:fontFamily="sans-serif-light"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/starters"
+        android:layout_marginTop="60dp"
+        android:text="starters"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/restaurant_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Courses"
+        android:layout_below="@id/starters"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+</RelativeLayout>
