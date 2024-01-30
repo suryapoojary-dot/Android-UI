@@ -1,98 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<RelativeLayout
-    android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_width="match_parent">
 
-    <TextView
-        android:id="@+id/restaurant_name"
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="The Hungry Developer"
-        android:textSize="24sp"
-        android:textColor="@color/material_dynamic_primary30"
-        android:fontFamily="sans-serif-light"/>
-    
-    <androidx.cardview.widget.CardView
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/text_view_restaurant_menu"
-        android:layout_marginTop="42dp"
-        android:layout_centerHorizontal="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        >
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/restaurant_name"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:text="The Hungry Developer"
+            android:textSize="24sp"
+            android:textColor="@color/material_dynamic_primary30"
+            android:fontFamily="sans-serif-light"/>
 
-     <ImageView
-         android:layout_width="match_parent"
-         android:layout_height="150dp"
-         android:scaleType="centerCrop"
-         android:src="@drawable/starter">
-
-
-     </ImageView>
-    <TextView
-        android:layout_margin="8dp"
-        android:textSize="18sp"
-        android:fontFamily="sans-serif-black"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/starters"
-        android:text="starters"
-
-
-        />
-
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/text_main_menu"
-        android:layout_below="@id/text_view_restaurant_menu"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:id="@+id/text_view_restaurant_menu"
+            android:layout_marginTop="42dp"
+            android:layout_centerHorizontal="true">
 
-            <ImageView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:src="@drawable/main"
-                android:scaleType="centerCrop"
-                ></ImageView>
-
-            <TextView
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Main Courses"
-                android:layout_below="@id/text_view_restaurant_menu"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:textSize="18sp"
-                android:fontFamily="sans-serif-black"
-                android:layout_marginTop="8sp"
-                 />
+                android:orientation="vertical">
 
-        </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/starter">
 
 
+                </ImageView>
+                <TextView
+                    android:layout_margin="8dp"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/starters"
+                    android:text="starters"
 
-    </androidx.cardview.widget.CardView>
+
+                    />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_main_menu"
+            android:layout_below="@id/text_view_restaurant_menu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/main"
+                    android:scaleType="centerCrop"
+                    ></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Main Courses"
+                    android:layout_below="@id/text_view_restaurant_menu"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginTop="8sp"
+                    />
+
+            </LinearLayout>
 
 
 
-</RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+</ScrollView>
