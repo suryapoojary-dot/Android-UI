@@ -7,6 +7,8 @@ import android.widget.ListView;
 
 public class StarterActivity extends AppCompatActivity {
 
+    String[] dishes = {"Chicken Crispy", "Egg 65", "Chicken Manchow", "Veg Spring Roll"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
