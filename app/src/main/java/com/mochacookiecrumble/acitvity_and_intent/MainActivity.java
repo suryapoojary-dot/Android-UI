@@ -3,7 +3,9 @@ package com.mochacookiecrumble.acitvity_and_intent;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,5 +18,14 @@ public class MainActivity extends AppCompatActivity {
 
         starterscard = findViewById(R.id.text_view_restaurant_menu);
         mainscard = findViewById(R.id.text_main_menu);
+
+        starterscard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent startersActivityIntent = new Intent(MainActivity.this,StarterActivity.class);
+                startActivity(startersActivityIntent);
+            }
+        });
     }
 }
