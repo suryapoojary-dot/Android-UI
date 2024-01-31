@@ -20,11 +20,23 @@
             android:textColor="@color/material_dynamic_primary30"
             android:fontFamily="sans-serif-light"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="throwxception@gmail.com"
+            android:layout_below="@id/restaurant_name"
+            android:padding="12sp"
+            android:fontFamily="sans-serif"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/email"
+            ></TextView>
+
         <androidx.cardview.widget.CardView
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:id="@+id/text_view_restaurant_menu"
-            android:layout_marginTop="42dp"
+            android:layout_marginTop="32dp"
+            android:layout_below="@id/email"
             android:layout_centerHorizontal="true">
 
             <LinearLayout
