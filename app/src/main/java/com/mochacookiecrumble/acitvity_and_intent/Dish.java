@@ -1,5 +1,7 @@
 package com.mochacookiecrumble.acitvity_and_intent;
 
+import androidx.annotation.NonNull;
+
 public class Dish {
 
     String title;
@@ -10,5 +12,11 @@ public class Dish {
         this.title = title;
         this.description = description;
         this.price = price;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return title;
     }
 }
