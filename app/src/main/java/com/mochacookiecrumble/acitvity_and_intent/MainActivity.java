@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
     CardView starterscard ;
     CardView mainscard;
+
+    CardView dessertcard;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         starterscard = findViewById(R.id.text_view_restaurant_menu);
         mainscard = findViewById(R.id.text_main_menu);
         TextView emailtexview = findViewById(R.id.email);
+        dessertcard = findViewById(R.id.dess);
 
         starterscard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +49,17 @@ public class MainActivity extends AppCompatActivity {
                 Intent launchemailapp = new Intent(Intent.ACTION_SENDTO);
                 launchemailapp.setData(Uri.parse("mailto:throwxception@gmail.com"));
                 startActivity(launchemailapp);
+            }
+        });
+
+
+        dessertcard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent dessert_intent = new Intent(MainActivity.this,DessertActivity.class);
+                startActivity(dessert_intent);
+
             }
         });
     }

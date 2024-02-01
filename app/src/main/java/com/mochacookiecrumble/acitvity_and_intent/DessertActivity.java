@@ -1,6 +1,7 @@
 package com.mochacookiecrumble.acitvity_and_intent;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
@@ -27,6 +28,9 @@ public class DessertActivity extends AppCompatActivity {
         ArrayAdapter<Dish> Dessert = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, desserts);
 
         dessert_list_view.setAdapter(Dessert);
+
+        //CardView dessert_card = findViewById(R.id.dess);
+
     }
 
 }
